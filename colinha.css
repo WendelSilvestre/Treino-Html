@@ -1,0 +1,88 @@
+/*Cacading Style Shhets (Folha de estilo em cascata)*/
+
+/* - Seletor */
+/* - Propriedade */
+/* - Valor da propriedade */
+/* - Declaração */
+
+/* Unidades de medida
+absolutas
+px - > Valor fixo
+
+relativas
+% - > De acordo com o elemento pagina
+rem - > Relativo ao tamanho do HTML (exemplo: html = 16px então rem 1 = 16px)
+
+vh - > De acordo com a altura do navegador
+vw - > De acordo com a largura do navegador
+*/
+
+header /*Seletor*/{
+  background-color/*Propriedade*/: red /*Valor da propriedade*/;
+}
+
+/*Chamando Class*/
+.NomeDaClass{
+}
+
+/*Chamando ID*/
+#NomeDoId{
+}
+
+/*Seletor por atributo*/
+a[href="https://google.com"]{
+  /*Pega somente o link que é igual ao link passado*/
+}
+
+/*Fontes de texto*/
+section{
+  font-size: 20px;    /* Tamanho da fonte*/
+  font-weight: bold;  /* Tipo da fonte*/
+  font-family: Comic; /* Familia da fonte*/
+  text-align: center; /* Alinhar texto*/
+  color: black;       /* Cor da fonte*/
+}
+
+/*Dimensionamento*/
+section{
+  background-color: red;                  /*Cor de fundo*/
+  background-image:                       /*Imagem de fundo*/
+  border: tipo, espessura, cor ;          /*Borda do elemento*/
+  border-radius: 5px;                     /*Quanto mais aumentar, mais redondo fica aborda*/
+  width: tamanho;                         /*Largura*/
+  height: tamanho;                        /*Altura*/
+  padding: cima direita baixo esquerda;   /*Cria uma marge dentro do elemento*/
+  margin: cima/baixo esquerda/direita;    /*Cria uma margem para fora*/
+}
+
+/*Posicionamento*/
+section{
+  display: inline ou block;     /*Forma como os elementos estão dispostos em linhas ou em blocos*/
+  display: grid;                /*Forma dos elementos em colunas*/
+  grid-template-columns: auto;  /*Utilizado para mexer no tamanho das colunas, necessario display grid*/
+  grid-template-rows: auto;     /*Utilizado para mexer no tamanho das linhas, necessario display grid*/
+  grid-row: 1 / 4;              /*Item vai da linha até a coluna 4*/
+  display: flex;                /*Serve para ficar responsivo, colca os itens um do lado do outro*/
+  flex-wrap: wrap;              /*Utilizado junto com o display: flex, para quebrar a linha */
+}
+
+/*As media queries, servem para ter um controle da disposição em certas telas*/
+@media (max or min - width or height){
+}
+
+/*Sistema de irmão adjacente, não entendi muito bem*/
+p + p{
+
+}
+
+/*Links quando vc passar o mouse por cima*/
+.NomeDaClass:hover{
+}
+
+/*Links quando vc já tiver visitado o site*/
+.NomeDaClass:visited{
+}
+
+/*Links quando você clicar nele*/
+.NomeDaClass:active{
+}
